@@ -1,11 +1,11 @@
 ---
+- name: Install Mysql
+  hosts: db
+  roles:
+    - mysql
 - name: Instalando Web
   hosts: web
   roles:
     - nginx
     - php-fpm
     - wordpress
-- name: Install Mysql
-  hosts: db
-  roles:
-    - mysql

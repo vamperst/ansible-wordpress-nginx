@@ -31,4 +31,4 @@
   file: path=/srv/wordpress/ owner=wordpress group=wordpress state=directory recurse=yes setype=httpd_sys_content_t
 
 - name: Start no servico fpm
-  service: name=php-fpm state=started enabled=yes
+  service: name=php5-fpm state=started enabled=yes
