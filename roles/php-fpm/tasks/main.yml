@@ -11,12 +11,8 @@
     - php5-mcrypt
     - php5-sqlite
     - sqlite3
-    - php5-xml
+    - python-mysqldb
 
-- name: Disable default pool
-  command: mv /etc/php-fpm.d/www.conf /etc/php-fpm.d/www.disabled creates=/etc/php-fpm.d/www.disabled
-  notify: restart php-fpm
-
-- name: Copy php-fpm configuration
+- name: Copia config Wordpress
   template: src=wordpress.conf dest=/etc/php-fpm.d/
   notify: restart php-fpm
