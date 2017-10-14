@@ -4,13 +4,13 @@
   with_items:
     - php5
     - php5-fpm
-    - php5-enchant
-    - php5-IDNA_Convert
-    - php5-mbstring
-    - php5-mysql
-    - php5-PHPMailer
-    - php5-process
-    - php5-simplepie
+    - php5-cli
+    - php5-curl
+    - php5-intl
+    - php5-json
+    - php5-mcrypt
+    - php5-sqlite
+    - sqlite3
     - php5-xml
 
 - name: Disable default pool
